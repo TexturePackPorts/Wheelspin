@@ -67,7 +67,7 @@ let myChart = new Chart(wheel, {
 const valueGenerator = (angleValue) => {
     for (let i of rotationValues) {
         if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-            finalValue.innerHTML = `<p>Value: ${i.value}</p>`;
+            finalValue.innerHTML = `<p>You Spun: ${i.value}</p>`;
             spinBtn.disabled = false;
             break;
         }
